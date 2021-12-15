@@ -50,13 +50,6 @@ class HashUtility(ABC):
 # Todas estas clases heredan de HashUtility por lo que han de implementar la función encode
 # Cada una de ellas puede implementar el método encode a su manera y retornar un hash
 
-class Md2(HashUtility):
-    def __init__(self, type='md2'):
-        super().__init__(type=type)
-
-    def encode(self, password):
-        return super().encode(password)
-
 class Md4(HashUtility):
     def __init__(self, type='md4'):
         super().__init__(type=type)
